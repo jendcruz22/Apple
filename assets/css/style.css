@@ -271,6 +271,14 @@ nav{
     line-height: 0px;
     margin-left: 80px;
 }
+
+.info-1 h3 ul li{
+    color: #fff;
+}
+.info-1 h3 ul li h2{
+    color: #000
+}
+
 .button{
     background-color: #0071e3;
     border: none;

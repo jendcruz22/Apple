@@ -6,7 +6,8 @@
         <title>AirPods - Apple</title>
         <link rel = "icon" type = "image/png" href = "assets/images/apple-logo.png">
 
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="./assets/css/w3.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -46,9 +47,13 @@
                     <div class="w3-full">
                         <div class="w3-container w3-black w3-center" style="padding-left: 70px; padding-right: 70px;">
                             <table class="w3-table w3-bordered">
-                                <tr>
-                                    <th style="font-size: 17px; font-weight: 700; ">AirPods Pro</th>
-                                    <th style="text-align: right; font-size: 12px;"><a>Overview</a><a href="" style="text-decoration: none; margin-left: 25px;">Tech Specs</a></th>
+                                <tr style="border-color: rgba(255,255,255,0.24);">
+                                    <th style="font-size: 17px; font-weight: 700;">AirPods Pro</th>
+                                    <th style="text-align: right; font-size: 12px;">
+                                        <a>Overview</a>
+                                        <a href="" style="text-decoration: none; margin-left: 25px;">Tech Specs</a>
+                                        <button class="button button-buy" style="margin-left: 20px;">Buy</button>
+                                    </th>
                                 </tr>
                             </table> 
                         </div>
@@ -57,96 +62,54 @@
             </div>
 
             <h1>AirPods Pro</h1>
-            <p>AirPods deliver effortless, all-day audio on the go.<br>And AirPods Pro bring Active Noise Cancellation to an<br>in-ear headphone — with a customisable fit.</p>
-            <div class="w3-container" style="margin-left: 60px; margin-right: 60px">
-               
-                <div class="w3-row">
-                    
-                    <div class="w3-half">
-                    <div class="w3-container w3-black w3-center"">
-                        <div class="learn-1">
-                                <b>
-                                    <h3>
-                                        AirPods Pro
-                                    </h3>
-                                </b>
-                                <ul>
-                                    <li>
-                                        <a href="#"">
-                                            Learn more <b><img src="assets/images/next.png" style="width: 2%;"></b>
-                                        </a>
-                                        <a href="#"">
-                                            Buy <img src="assets/images/next.png" style="width: 2%;">
-                                        </a>
-                                    </li>
-                                </ul>
+
+            <!-- AIRPODS SCROLL SEQUENCE STARTS  -->
+            <!-- partial:index.partial.html -->
+            <div class="container scroll-container">
+                <section class="scroll-sequence__container apple-container">
+                    <div class="scroll-sequence apple-sequence"></div>
+                        <div class="scroll-sequence__content">
+                            <div class="speak">
+                                <p style="padding-bottom: 0px; font-size: 12px;">Comfort</p>
+                                <h2 style="font-weight: 700; font-size: 60px;">Arrival of the fittest</h2>
+                            </div>
+                        <div class="speak">
+                            <!-- <h2>This is Apple's image sequence</h2>
+                            <p>Al]l copyrights to them. Please don't sue me!</p> -->
+                        </div>
+                        <div class="speak">
+                            <!-- <h2>The Text Animation</h2>
+                            <p>Is created with Scroll-out.js. Go check it out!</p> -->
+                        </div>
+                    </div>
+                </section>
+            <!--   <div class="spacer" style="height: 80vh"></div> -->
+                <section class="scroll-sequence__container tree-container">
+                    <div class="scroll-sequence tree-sequence"></div>
+                        <div class="scroll-sequence__content">
+                            <div class="speak">
+                                <!-- <h2>This took me a while</h2>
+                                <p>To get right, but here it is!</p> -->
+                            </div>
+                            <div class="speak">
+                                <!-- <h2>Apple's images load faster</h2>
+                                <p>Compression favors less details. So, shots of the forest was not the best idea :P</p> -->
+                            </div>
+                            <div class="speak">
+                                <!-- <h2>Running out of things</h2>
+                                <p>To say so imma head out.</p> -->
                             </div>
                         </div>
-                    <img src="assets/images/airpods-pro-prod.PNG" style="width: 95%;">
-                    </div>
-                    
-                    <div class="w3-half">
-                    <div class="w3-container w3-white w3-center">
-                        <div class="learn-2">
-                            <b>
-                                <h3>
-                                    AirPods
-                                </h3>
-                            </b>
-                            <ul>
-                                <li>
-                                    <a href="#"">
-                                        Learn more <b><img src="assets/images/next.png" style="width: 2%;"></b>
-                                    </a>
-                                    <a href="#"">
-                                        Buy <img src="assets/images/next.png" style="width: 2%;">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    <img src="assets/images/airpods-prod.PNG" style="width: 100%;">
-                    </div>
-                </div>
-
-
-                <div class="w3-row">
-                    <div class="w3-full">
-                        <div class="w3-container w3-white w3-center" style="padding-top: 50px;">
-                            <div class="info-1">
-                                    <b>
-                                        <h3>
-                                            Find the right <br>AirPods for you.
-                                            <img src="assets/images/airpods-pro-table.PNG" style="width: 15%; margin-left: 80px;">
-                                            <img src="assets/images/airpods-table.PNG" style="width: 12%; margin-left: 150px;">
-                                            <ul><li>
-                                                <h2 style="margin-left: 340px; margin-top: 30px;">AirPods Pro</h2>
-                                                <h2 style="margin-left: 650px;">AirPods</h2>
-                                            </li></ul>
-                                            <ul><li>
-                                                <button class="button button-buy" style="margin-left: 375px;">Buy</button>
-                                                <button class="button button-buy" style="margin-left: 200px;">Buy</button>
-                                            </li></ul>
-                                        </h3>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-
-                
+                </section>
+            <!--   <div class="spacer"></div> -->
             </div>
-            
+            <!-- partial -->
+                <script src='https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js'></script><script  src="./assets/js/man-script.js"></script>
+  
+            <!-- AIRPODS SCROLL SEQUENCE ENDS -->
+    
         </section>
         <!-- AIRPODS-DISPLAY ENDS -->
-
-        <!-- FOOTER -->
-        <section style="background-color: #f5f5f7; color: white;">
-            <div>
-                blah
-            </div>
-        </section>
-        <!-- FOOTER ENDS -->
-
         <!-- NAVBAR SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script type="text/javascript">

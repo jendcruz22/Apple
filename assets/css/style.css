@@ -260,6 +260,31 @@ nav{
     margin-right: 30px;
     font-weight: 500;
 }
+.info-1{
+    background-color: #fff;
+    padding-left: 60px;
+}
+.info-1 h3{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 0px;
+    margin-left: 80px;
+}
+.button{
+    background-color: #0071e3;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .airpods-display div table td th{
     line-height: 1.47059;
     letter-spacing: -.022em;
@@ -267,6 +292,7 @@ nav{
 .w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th{
     padding: 10px 10px;
     font-size: 17px;
+    font-weight: 400;
     vertical-align: middle;
 }
 /* AIRPODS-DISPLAY ENDS */

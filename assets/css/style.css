@@ -181,15 +181,21 @@ nav{
 .airpods{
     background-color: #0e0e0e;
 }
-
 .airpods a{
     color: #f5f5f7;
     font-size: 12px;
+    text-decoration: none;
 }
 .airpods a:hover{
     color: #0071e3;
+    text-decoration: none;
 }
-
+.airpods div{
+    padding-bottom: 25px;
+}
+.airpods div ul li img{
+    width: 4%;
+}
 /* END OF AIRPODS */
 
 /* AIRPODS-DISPLAY STARTS */
@@ -200,81 +206,58 @@ nav{
     text-align: center;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
-
 .airpods-display h1{
     font-size: 80px;
     line-height: 1.0625;
     font-weight: 600;
     letter-spacing: -.009em;
+    padding-top: 20px;
 }
-
 .airpods-display p{
-    /* padding: 0px 104px; */
+    padding-bottom: 60px;
     font-size: 27px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .009em;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+.airpods-display h3{
+    padding-top: 70px;
+    font-size: 80px;
+    letter-spacing: -.022em;
+    line-height: 1.47059; 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 800;
+}
+.airpods-display .w3-half{
+    background-color: black;
+}
+.learn-1{
+    color: black;
+}
+.learn-1 h3{
+    color: white;
+}
+.learn-1 ul li a{
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 17px;
+}
+.learn-1 ul li a img{
+    width: 2%;
+}
+.learn-2{
+    color: white;
+}
+.learn-2 h3{
+    color: black;
+}
+.learn-2 ul li a{
+    text-decoration: none;
+    color: #2997ff;
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
 /* AIRPODS-DISPLAY ENDS */
 
-/* SCROLL SEQUENCE */
-.scroll-container {
-    height: 100vh;
-    background: black;
-  }
-  
-  .speak {
-    margin: 150vh 0;
-  }
-  .speak:first-child {
-    margin-top: -50vh;
-  }
-  
-  .speak[data-scroll] {
-    transform: translatey(calc(var(--viewport-y) * 30vh));
-    opacity: calc(var(--visible-y));
-  }
-  
-  .scroll-sequence__content {
-    padding: 4em;
-  }
-  
-  .scroll-sequence {
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -5;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-
-  h1 {
-    font-size: 3em;
-    width: 60wv;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  p {
-      color: #fff;
-  }
-
-    @media screen and (max-width: 600px) {
-        h1 {
-        font-size: 2em;
-        width: 100%;
-        }
-    }
-  
-  :root {
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: #0e0e0e;
-  }
-  
-  /* SCROLL SEQUENCE ENDS */

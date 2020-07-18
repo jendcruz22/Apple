@@ -177,41 +177,19 @@ nav{
   }
 /* END OF NAVBAR */
 
-/* AIRPODS */
-.airpods{
-    background-color: #0e0e0e;
-}
-.airpods a{
-    color: #f5f5f7;
-    font-size: 12px;
-    text-decoration: none;
-}
-.airpods a:hover{
-    color: #0071e3;
-    text-decoration: none;
-}
-.airpods div{
-    padding-bottom: 25px;
-}
-.airpods div ul li img{
-    width: 4%;
-}
-/* END OF AIRPODS */
-
 /* AIRPODS-DISPLAY STARTS */
 .airpods-display{
-    padding: 20px 0px 75px;
-    background-color: #1D1D1F;
+    background-color: #000;
     color: #fff;
     text-align: center;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .airpods-display h1{
-    font-size: 80px;
+    font-size: 150px;
     line-height: 1.0625;
     font-weight: 600;
     letter-spacing: -.009em;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .airpods-display p{
     padding-bottom: 60px;
@@ -298,10 +276,18 @@ nav{
     letter-spacing: -.022em;
 }
 .w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th{
-    padding: 10px 10px;
     font-size: 17px;
     font-weight: 400;
     vertical-align: middle;
+    line-height: 35px;
+    border-color: grey;
+}
+.w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child {
+    padding: 0px;
+    padding-left: 0px;
+}
+.w3-table-all .w3-table{
+    border-color: rgba(255,255,255,0.24);
 }
 /* AIRPODS-DISPLAY ENDS */
 

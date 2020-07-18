@@ -209,7 +209,7 @@ nav{
 }
 
 .airpods-display p{
-    padding: 0px 104px;
+    /* padding: 0px 104px; */
     font-size: 27px;
     font-weight: 600;
     letter-spacing: .009em;
@@ -275,7 +275,6 @@ nav{
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     color: #0e0e0e;
-    text-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
   }
   
   /* SCROLL SEQUENCE ENDS */

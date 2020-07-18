@@ -240,7 +240,9 @@ nav{
 .learn-1 ul li a{
     text-decoration: none;
     color: #2997ff;
-    font-size: 17px;
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 500;
 }
 .learn-1 ul li a img{
     width: 2%;
@@ -258,6 +260,14 @@ nav{
     margin-right: 30px;
     font-weight: 500;
 }
-
+.airpods-display div table td th{
+    line-height: 1.47059;
+    letter-spacing: -.022em;
+}
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th{
+    padding: 10px 10px;
+    font-size: 17px;
+    vertical-align: middle;
+}
 /* AIRPODS-DISPLAY ENDS */
 

@@ -201,12 +201,12 @@ nav{
 /* AIRPODS-DISPLAY STARTS */
 .airpods-display{
     padding: 20px 0px 75px;
-    background-color: #1D1D1F;
-    color: #fff;
+    background-color: rgba(29, 29, 31,0.5);
     text-align: center;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .airpods-display h1{
+    color: #fff;
     font-size: 80px;
     line-height: 1.0625;
     font-weight: 600;
@@ -214,6 +214,7 @@ nav{
     padding-top: 20px;
 }
 .airpods-display p{
+    color: #fff;
     padding-bottom: 60px;
     font-size: 27px;
     font-weight: 500;
@@ -304,3 +305,18 @@ nav{
 }
 /* AIRPODS-DISPLAY ENDS */
 
+/* FOOTER */
+.footer{
+    background-color: #1d1d1f;
+    color: #6e6e73;
+    border-color: #424245;
+}
+.footer ol{
+    background-color: #1d1d1f;
+    color: #6e6e73;
+    border-color: #424245;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px
+}
+/* END OF FOOTER */

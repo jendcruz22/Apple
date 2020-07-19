@@ -310,6 +310,23 @@ nav{
     background-color: #1d1d1f;
     color: #6e6e73;
     border-color: #424245;
+    padding-bottom: 0.8em;
+    /* padding-left: calc(max(22px, env(safe-area-inset-left)));
+    padding-right: calc(max(22px, env(safe-area-inset-right))); */
+    /* padding: 0 22px;
+    margin: 0 auto; */
+    /* max-width: 980px; */
+    /* padding: 0 22px; */
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    box-sizing: content-box;
+    pointer-events: auto;
+    letter-spacing: normal;
+    border-left-color: #1d1d1f;
+    border-right-color: ; #1d1d1f;
 }
 .footer ol{
     background-color: #1d1d1f;
@@ -317,6 +334,26 @@ nav{
     border-color: #424245;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    padding-inline-start: 0px
+    padding-top: 10px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.footer ol li{
+    padding-bottom: 0.8em;
+    font-size: 10px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.footer div.last{
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 0.8em;
+    font-size: 10px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 /* END OF FOOTER */

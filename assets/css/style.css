@@ -1,359 +1,425 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400');
-body{
-    margin:0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #0e0e0e;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #0e0e0e;
 }
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 /* NAVBAR */
-nav{
-    height: 44px;
-    background: #000;
+nav {
+  height: 44px;
+  background: #000;
 }
-.menu{
-    position: relative;
-    margin: 0 auto;
-    width: 1000px;
-    overflow: hidden;
+.menu {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  overflow: hidden;
 }
 
 .menu ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu ul li{
-    list-style: none;
+.menu ul li {
+  list-style: none;
 }
 
 .menu ul li,
-.menu ul li a{
-    color: #fff;
-    line-height: 44px;
-    text-decoration: none;
+.menu ul li a {
+  color: #fff;
+  line-height: 44px;
+  text-decoration: none;
 }
 
-.menu ul li .fa.fa-apple{
-    font-size: 20px;
+.menu ul li .fa.fa-apple {
+  font-size: 20px;
 }
-.menu ul li a.menu-item{
-    transform: scale(1);
-    transition: 0.5s;
-    display: block;
+.menu ul li a.menu-item {
+  transform: scale(1);
+  transition: 0.5s;
+  display: block;
 }
-.menu ul li a.menu-item.hide-item{
-    transform: scale(0);
+.menu ul li a.menu-item.hide-item {
+  transform: scale(0);
 }
-.menu ul li:nth-child(2) a.menu-item.hide-item{
-    transition-delay: 0.6s;
+.menu ul li:nth-child(2) a.menu-item.hide-item {
+  transition-delay: 0.6s;
 }
-.menu ul li:nth-child(3) a.menu-item.hide-item{
-    transition-delay: 0.5s;
+.menu ul li:nth-child(3) a.menu-item.hide-item {
+  transition-delay: 0.5s;
 }
-.menu ul li:nth-child(4) a.menu-item.hide-item{
-    transition-delay: 0.4s;
+.menu ul li:nth-child(4) a.menu-item.hide-item {
+  transition-delay: 0.4s;
 }
-.menu ul li:nth-child(5) a.menu-item.hide-item{
-    transition-delay: 0.3s;
+.menu ul li:nth-child(5) a.menu-item.hide-item {
+  transition-delay: 0.3s;
 }
-.menu ul li:nth-child(6) a.menu-item.hide-item{
-    transition-delay: 0.2s;
+.menu ul li:nth-child(6) a.menu-item.hide-item {
+  transition-delay: 0.2s;
 }
-.menu ul li:nth-child(7) a.menu-item.hide-item{
-    transition-delay: 0.1s;
+.menu ul li:nth-child(7) a.menu-item.hide-item {
+  transition-delay: 0.1s;
 }
-.menu ul li:nth-child(8) a.menu-item.hide-item{
-    transition-delay: 0s;
+.menu ul li:nth-child(8) a.menu-item.hide-item {
+  transition-delay: 0s;
 }
 
+.menu ul li:nth-child(2) a.menu-item. {
+  transition-delay: 0s;
+}
+.menu ul li:nth-child(3) a.menu-item {
+  transition-delay: 0.1s;
+}
+.menu ul li:nth-child(4) a.menu-item {
+  transition-delay: 0.2s;
+}
+.menu ul li:nth-child(5) a.menu-item {
+  transition-delay: 0.3s;
+}
+.menu ul li:nth-child(6) a.menu-item {
+  transition-delay: 0s4;
+}
+.menu ul li:nth-child(7) a.menu-item {
+  transition-delay: 0.5s;
+}
+.menu ul li:nth-child(8) a.menu-item {
+  transition-delay: 0.6s;
+}
+.search-form {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 44px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.search-form.active {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+  transform: translateX(0%);
+}
+.search-form input {
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.search-form input::placeholder {
+  color: #fff;
+}
+.search-form:before {
+  content: "\f002";
+  position: absolute;
+  top: 12px;
+  left: -26px;
+  font-size: 18px;
+  color: #fff;
+  font-family: fontAwesome;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 44px;
+  background: #000;
+  color: #fff;
+  line-height: 44px;
+  font-size: 18px;
+  text-align: right;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+.close.active {
+  opacity: 1;
+  visibility: visible;
+}
 
-
-.menu ul li:nth-child(2) a.menu-item.{
-    transition-delay: 0s;
-}
-.menu ul li:nth-child(3) a.menu-item{
-    transition-delay: 0.1s;
-}
-.menu ul li:nth-child(4) a.menu-item{
-    transition-delay: 0.2s;
-}
-.menu ul li:nth-child(5) a.menu-item{
-    transition-delay: 0.3s;
-}
-.menu ul li:nth-child(6) a.menu-item{
-    transition-delay: 0.s4;
-}
-.menu ul li:nth-child(7) a.menu-item{
-    transition-delay: 0.5s;
-}
-.menu ul li:nth-child(8) a.menu-item{
-    transition-delay: 0.6s;
-}
-.search-form{
-    position: absolute;
-    top: 0;
-    left: 25%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 44px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-}
-.search-form.active{
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.5s;
-    transform: translateX(0%);
-}
-.search-form input{
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .menu {
+    width: 80%;
+    padding: 0;
+  }
+  .search-form {
     width: 100%;
-    height: 44px;
-    background: transparent;
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 16px;
-}
-.search-form input::placeholder{
-    color: #fff;
-
-}
-.search-form:before{
-    content: '\f002';
-    position: absolute;
-    top: 12px;
-    left: -26px;
-    font-size: 18px;
-    color: #fff;
-    font-family: fontAwesome;
-}
-.close{
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 44px;
-    background: #000;
-    color:#fff;
-    line-height: 44px;
-    font-size: 18px;
-    text-align: right;
-    width: 20px;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-}
-.close.active{
-    opacity: 1;
-    visibility: visible;
-}
-
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .menu {
-      width: 80%;
-      padding: 0;
-    }
-    .search-form {
-      width: 100%;
-    }
-    .close {
-        width: 100%;
-      }
   }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .search-form, .close {
-      width: 100%;
-    }
+  .close {
+    width: 100%;
   }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu,
+  .search-form,
+  .close {
+    width: 100%;
+  }
+}
 /* END OF NAVBAR */
 
 /* AIRPODS */
-.airpods{
-    background-color: #0e0e0e;
+.airpods {
+  background-color: #0e0e0e;
 }
-.airpods a{
-    color: #f5f5f7;
-    font-size: 14px;
-    text-decoration: none;
+.airpods a {
+  color: #f5f5f7;
+  font-size: 14px;
+  text-decoration: none;
 }
-.airpods a:hover{
-    color: #0071e3;
-    text-decoration: none;
+.airpods a:hover {
+  color: #0071e3;
+  text-decoration: none;
 }
-.airpods div{
-    padding-bottom: 25px;
+.airpods div {
+  padding-bottom: 25px;
 }
-.airpods div ul li img{
-    width: 4%;
+.airpods div ul li img {
+  width: 4%;
 }
 /* END OF AIRPODS */
 
 /* AIRPODS-DISPLAY STARTS */
-.airpods-display{
-    padding: 20px 0px 75px;
-    background-color: rgba(29, 29, 31,0.5);
-    text-align: center;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+.airpods-display {
+  /* padding: 20px 0px ; */
+  background-color: rgba(29, 29, 31, 0.5);
+  text-align: center;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
-.airpods-display h1{
-    color: #fff;
-    font-size: 80px;
-    line-height: 1.0625;
-    font-weight: 600;
-    letter-spacing: -.009em;
-    padding-top: 20px;
+.airpods-display h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.009em;
+  padding-top: 20px;
 }
-.airpods-display p{
-    color: #fff;
-    padding-bottom: 60px;
-    font-size: 27px;
-    font-weight: 500;
-    letter-spacing: .009em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+.airpods-display p {
+  color: #fff;
+  padding-bottom: 60px;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0.009em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
-.airpods-display h3{
-    padding-top: 70px;
-    font-size: 80px;
-    letter-spacing: -.022em;
-    line-height: 1.47059; 
-    font-family: 'Source Sans Pro', sans-serif; 
-    font-weight: 800;
+.airpods-display h3 {
+  padding-top: 70px;
+  font-size: 80px;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
 }
-.airpods-display .w3-half{
-    background-color: black;
+.airpods-display .w3-half {
+  background-color: black;
 }
-.learn-1{
-    color: black;
+.learn-1 {
+  color: black;
 }
-.learn-1 h3{
-    color: white;
+.learn-1 h3 {
+  color: white;
 }
-.learn-1 ul li a{
-    text-decoration: none;
-    color: #2997ff;
-    font-size: 20px;
-    margin-right: 30px;
-    font-weight: 500;
+.learn-1 ul li a {
+  text-decoration: none;
+  color: #2997ff;
+  font-size: 20px;
+  margin-right: 30px;
+  font-weight: 500;
 }
-.learn-1 ul li a img{
-    width: 2%;
+.learn-1 ul li a img {
+  width: 2%;
 }
-.learn-2{
-    color: white;
+.learn-2 {
+  color: white;
 }
-.learn-2 h3{
-    color: black;
+.learn-2 h3 {
+  color: black;
 }
-.learn-2 ul li a{
-    text-decoration: none;
-    color: #2997ff;
-    font-size: 20px;
-    margin-right: 30px;
-    font-weight: 500;
+.learn-2 ul li a {
+  text-decoration: none;
+  color: #2997ff;
+  font-size: 20px;
+  margin-right: 30px;
+  font-weight: 500;
 }
-.info-1{
-    background-color: #fff;
-    padding-left: 60px;
+.info-1 {
+  background-color: #fff;
+  padding-left: 60px;
 }
-.info-1 h3{
-    font-size: 45px;
-    font-weight: 900;
-    text-align: left;
-    line-height: 0px;
-    margin-left: 80px;
+.info-1 h3 {
+  font-size: 45px;
+  font-weight: 900;
+  text-align: left;
+  line-height: 0px;
+  margin-left: 80px;
 }
-.info-1 h3 ul li{
-    color: #fff;
+.info-1 h3 ul li {
+  color: #fff;
 }
-.info-1 h3 ul li h2{
-    color: #000
-}
-
-.button{
-    background-color: #0071e3;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 20px;
-    cursor: pointer;
+.info-1 h3 ul li h2 {
+  color: #000;
 }
 
-.airpods-display div table td th{
-    line-height: 1.47059;
-    letter-spacing: -.022em;
+.button {
+  background-color: #0071e3;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px;
+  cursor: pointer;
 }
-.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th{
-    padding: 10px 10px;
-    font-size: 17px;
-    font-weight: 400;
-    vertical-align: middle;
+
+.airpods-display div table td th {
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+}
+.w3-table td,
+.w3-table th,
+.w3-table-all td,
+.w3-table-all th {
+  padding: 10px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  vertical-align: middle;
 }
 /* AIRPODS-DISPLAY ENDS */
 
 /* FOOTER */
-.footer{
-    background-color: #1d1d1f;
-    color: #6e6e73;
-    border-color: #424245;
-    padding-bottom: 0.8em;
-    /* padding-left: calc(max(22px, env(safe-area-inset-left)));
-    padding-right: calc(max(22px, env(safe-area-inset-right))); */
-    /* padding: 0 22px;
-    margin: 0 auto; */
-    /* max-width: 980px; */
-    /* padding: 0 22px; */
-    font-size: 1em;
-    font-family: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    text-align: inherit;
-    box-sizing: content-box;
-    pointer-events: auto;
-    letter-spacing: normal;
-    border-left-color: #1d1d1f;
-    border-right-color: ; #1d1d1f;
+.footer {
+  background-color: #1d1d1f;
+  color: #6e6e73;
+  border-color: #424245;
+  padding-bottom: 0.8em;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  box-sizing: content-box;
+  pointer-events: auto;
+  letter-spacing: normal;
+  border-left-color: #1d1d1f;
+  border-right-color: #1d1d1f;
 }
-.footer ol{
-    background-color: #1d1d1f;
-    color: #6e6e73;
-    border-color: #424245;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    padding-top: 10px;
-    padding-left: 250px;
-    padding-right: 250px;
+.footer ol {
+  background-color: #1d1d1f;
+  color: #6e6e73;
+  border-color: #424245;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-top: 20px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
-.footer ol li{
-    padding-bottom: 0.8em;
-    font-size: 10px;
-    line-height: 1.33337;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+.footer ol li {
+  padding-bottom: 0.8em;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-.footer div.last{
-    padding-left: 240px;
-    padding-right: 250px;
-    padding-bottom: 0.8em;
-    font-size: 10px;
-    line-height: 1.33337;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+.footer ol li a {
+  color: #a1a1a6;
+  text-decoration: none;
+}
+.footer div.last {
+  padding-left: 150px;
+  padding-right: 160px;
+  padding-bottom: 0.8em;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.footer hr {
+  width: 78%;
+  margin-left: 140px;
+  border-color: rgba(255, 255, 255, 0.24);
+}
+.footer div.footer-p2 {
+  background-color: #1d1d1f;
+  line-height: 0px;
+  color: #a1a1a6;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  padding: 3px 4px 3px 0;
+  margin-right: 7px;
+  margin-left: 10px;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.footer div.footer-p2 img.apple {
+  width: 1.5%;
+  margin-left: 140px;
+  line-height: 1px;
+}
+.footer div.footer-p2 img.next {
+  width: 1%;
+  line-height: 0px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.footer div.footer-widget ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+.footer div.footer-widget h3 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-right: 7px;
+  margin-left: 150px;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.footer div.footer-widget ul li {
+  text-decoration: none;
+  color: #a1a1a6;
+  font-size: 1em;
+}
+.footer div.footer-widget ul li a {
+  text-decoration: none;
+  color: #a1a1a6;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 1em;
+  margin-right: 7px;
+  margin-left: 110px;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 /* END OF FOOTER */
